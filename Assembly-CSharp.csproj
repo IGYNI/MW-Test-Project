@@ -64,8 +64,14 @@
     <Analyzer Include="C:\Program Files\Unity 2022.3.16f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Builds\Building_Instantiate.cs" />
-    <Compile Include="Assets\Scripts\Builds\Build.cs" />
+    <Compile Include="Assets\Scripts\Builds\Money\BankSystem\BankSystem.cs" />
+    <Compile Include="Assets\Scripts\Builds\MechanicOfBuildingBuilds\Building_Instantiate.cs" />
+    <Compile Include="Assets\Scripts\Builds\Petrol\PetrolGenerator\PetrolGeneratior.cs" />
+    <Compile Include="Assets\Scripts\GlobalInventory\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Builds\Oil\OilGenerator\OilGeneratior.cs" />
+    <Compile Include="Assets\Scripts\Builds\MechanicOfBuildingBuilds\Build.cs" />
+    <Compile Include="Assets\Scripts\GlobalInventory\InventroyChangeLvlOfButtons.cs" />
+    <Compile Include="Assets\Scripts\Camera\CameraMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
