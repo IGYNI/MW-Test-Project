@@ -360,6 +360,8 @@
 "Assets/Scripts/Camera/CameraMove.cs"
 "Assets/Scripts/GlobalInventory/Inventory.cs"
 "Assets/Scripts/GlobalInventory/InventroyChangeLvlOfButtons.cs"
+"Assets/Scripts/GlobalInventory/WorldLoad.cs"
+"Assets/Scripts/Menu/Menu.cs"
 -langversion:9.0
 
 /deterministic

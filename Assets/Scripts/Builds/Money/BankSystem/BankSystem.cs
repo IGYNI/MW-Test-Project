@@ -31,7 +31,6 @@ public class BankSystem : MonoBehaviour
     {
         MoneySubmitText.text = "GET\n" + Camera.main.GetComponent<Inventory>().Petrol * Multiplier + "$";
         
-        //Debug.Log(Multiplier);
         faketimer =- Time.deltaTime;
         if((timer += Time.deltaTime) >= ToExchangeTime)
         {

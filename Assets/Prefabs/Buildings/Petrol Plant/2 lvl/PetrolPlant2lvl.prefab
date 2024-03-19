@@ -4982,6 +4982,7 @@ GameObject:
   - component: {fileID: 8404870863307141922}
   - component: {fileID: 4216016595644082704}
   - component: {fileID: 5348069075839035643}
+  - component: {fileID: 2324502458524429510}
   m_Layer: 0
   m_Name: PetrolPlant1lvlModel
   m_TagString: Untagged
@@ -5056,6 +5057,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2324502458524429510
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3899087218790007698}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.8, y: 17.8, z: 10.6}
+  m_Center: {x: -0.4000001, y: 8.9, z: 0}
 --- !u!1 &5080281611117488634
 GameObject:
   m_ObjectHideFlags: 0
@@ -10122,7 +10144,6 @@ GameObject:
   - component: {fileID: 8806465800411717999}
   - component: {fileID: 8089070073138877397}
   - component: {fileID: 8978564697197294112}
-  - component: {fileID: 7520744781113334381}
   - component: {fileID: 774269016458771796}
   - component: {fileID: 7403580522187440778}
   - component: {fileID: 3329623633488862338}
@@ -10142,7 +10163,7 @@ Transform:
   m_GameObject: {fileID: 6224215607619696148}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.02, y: 0.31, z: -6.08}
+  m_LocalPosition: {x: 4, y: -0.5, z: -19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10200,29 +10221,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &7520744781113334381
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6224215607619696148}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &774269016458771796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10237,6 +10235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItSelfTransform: {fileID: 8806465800411717999}
   ItSelfRenderer: {fileID: 8978564697197294112}
+  Sound: {fileID: 8300000, guid: fa9a80bc23879194fa3cf23e0f343885, type: 3}
 --- !u!54 &7403580522187440778
 Rigidbody:
   m_ObjectHideFlags: 0

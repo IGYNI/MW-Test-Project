@@ -46,7 +46,6 @@ GameObject:
   - component: {fileID: 1824829184288776668}
   - component: {fileID: 2179538317360787449}
   - component: {fileID: 5563395540753706047}
-  - component: {fileID: 4860190417448511839}
   - component: {fileID: 5197621286059464746}
   - component: {fileID: 6186104147181085511}
   - component: {fileID: 711641629464596308}
@@ -66,7 +65,7 @@ Transform:
   m_GameObject: {fileID: 2013534178453447504}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.414149, y: -0.74, z: -16.426197}
+  m_LocalPosition: {x: 4, y: -0.743, z: -13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -124,29 +123,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &4860190417448511839
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013534178453447504}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &5197621286059464746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,6 +137,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItSelfTransform: {fileID: 1824829184288776668}
   ItSelfRenderer: {fileID: 5563395540753706047}
+  Sound: {fileID: 8300000, guid: 1070914d35a2ac648971e7e59036b622, type: 3}
 --- !u!54 &6186104147181085511
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5148,6 +5125,7 @@ GameObject:
   - component: {fileID: 954527574643490099}
   - component: {fileID: 8494861913875753586}
   - component: {fileID: 6668247370473433120}
+  - component: {fileID: 5402143038562891200}
   m_Layer: 0
   m_Name: PetrolPlant1lvlModel
   m_TagString: Untagged
@@ -5221,6 +5199,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5402143038562891200
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4752494538816635635}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.8, y: 8, z: 10.6}
+  m_Center: {x: -0.4000001, y: 4, z: -0.0000076293945}
 --- !u!1 &6039689569526915632
 GameObject:
   m_ObjectHideFlags: 0

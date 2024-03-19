@@ -69,8 +69,10 @@
     <Compile Include="Assets\Scripts\Builds\Petrol\PetrolGenerator\PetrolGeneratior.cs" />
     <Compile Include="Assets\Scripts\GlobalInventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\Builds\Oil\OilGenerator\OilGeneratior.cs" />
+    <Compile Include="Assets\Scripts\GlobalInventory\WorldLoad.cs" />
     <Compile Include="Assets\Scripts\Builds\MechanicOfBuildingBuilds\Build.cs" />
     <Compile Include="Assets\Scripts\GlobalInventory\InventroyChangeLvlOfButtons.cs" />
+    <Compile Include="Assets\Scripts\Menu\Menu.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraMove.cs" />
   </ItemGroup>
   <ItemGroup>

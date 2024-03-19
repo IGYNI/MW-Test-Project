@@ -25,7 +25,6 @@ public class InventroyChangeLvlOfButtons : MonoBehaviour
         ButtonsToBuy[_currentLvl].SetActive(false);
         if (_currentLvl != 2)_currentLvl++;
         else _currentLvl = 0;
-        //Debug.Log(_currentLvl);
         ButtonsToBuy[_currentLvl].SetActive(true);
     }
 
@@ -34,7 +33,6 @@ public class InventroyChangeLvlOfButtons : MonoBehaviour
         ButtonsToBuy[_currentLvl].SetActive(false);
         if (_currentLvl != 0)_currentLvl--;
         else _currentLvl = 2;
-        //Debug.Log(_currentLvl);
         ButtonsToBuy[_currentLvl].SetActive(true);
     }
 

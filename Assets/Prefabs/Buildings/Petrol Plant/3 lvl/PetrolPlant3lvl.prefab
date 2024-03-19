@@ -4841,6 +4841,7 @@ GameObject:
   - component: {fileID: 3393531029058281193}
   - component: {fileID: 2028694670643843884}
   - component: {fileID: 2265715961250798136}
+  - component: {fileID: 6855789958737677380}
   m_Layer: 0
   m_Name: PetrolPlant3lvlModel
   m_TagString: Untagged
@@ -4857,7 +4858,7 @@ Transform:
   m_GameObject: {fileID: 1290733634855240068}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.45, y: -1.5225847, z: -0.53}
+  m_LocalPosition: {x: 0.74, y: -1.5225847, z: 0.42}
   m_LocalScale: {x: 0.2, y: 0.19999999, z: 0.20000002}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4916,6 +4917,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &6855789958737677380
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290733634855240068}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 21.1, y: 17.8, z: 10.6}
+  m_Center: {x: -1.5500002, y: 8.9, z: 0}
 --- !u!1 &1502603948782792560
 GameObject:
   m_ObjectHideFlags: 0
@@ -14734,7 +14756,6 @@ GameObject:
   - component: {fileID: 8032299619022897477}
   - component: {fileID: 7822781755439917159}
   - component: {fileID: 7249690927104975107}
-  - component: {fileID: 3881782647181798924}
   - component: {fileID: 4613957689680629225}
   - component: {fileID: 7918309143197451272}
   - component: {fileID: 8510413893607537847}
@@ -14812,29 +14833,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &3881782647181798924
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6844452738734447766}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5000001
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &4613957689680629225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14849,6 +14847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItSelfTransform: {fileID: 8032299619022897477}
   ItSelfRenderer: {fileID: 7249690927104975107}
+  Sound: {fileID: 8300000, guid: 79627d30b6315df4893792cddaed2da7, type: 3}
 --- !u!54 &7918309143197451272
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14993,7 +14992,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7670300650680294351}
   m_LocalRotation: {x: 0.42471093, y: 0.33985054, z: -0.17592101, w: 0.8204718}
-  m_LocalPosition: {x: 0, y: 0, z: 0.37}
+  m_LocalPosition: {x: 0, y: 0, z: 1.3199998}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -15004,7 +15003,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 54.736, y: 45, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.04, y: 1.393}
+  m_AnchoredPosition: {x: 0.32999995, y: 1.393}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8847257275494713450

@@ -477,10 +477,10 @@ GameObject:
   - component: {fileID: 1394033351400973619}
   - component: {fileID: 6737323064461171174}
   - component: {fileID: 5584908109433082923}
-  - component: {fileID: 9085030366821493494}
   - component: {fileID: 3308500987060893124}
   - component: {fileID: 149295520733508178}
   - component: {fileID: 5996197005738819551}
+  - component: {fileID: 1365156897501487182}
   m_Layer: 0
   m_Name: OilRigPrefab2lvl
   m_TagString: Untagged
@@ -497,7 +497,7 @@ Transform:
   m_GameObject: {fileID: 6007425054959144132}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.35, y: -0.39, z: -9.14}
+  m_LocalPosition: {x: -15, y: -0.5, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -555,27 +555,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &9085030366821493494
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6007425054959144132}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &3308500987060893124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,6 +569,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItSelfTransform: {fileID: 1394033351400973619}
   ItSelfRenderer: {fileID: 5584908109433082923}
+  Sound: {fileID: 8300000, guid: c6cc6396a2908d44c8feb29a494ce28e, type: 3}
 --- !u!54 &149295520733508178
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -632,6 +612,27 @@ MonoBehaviour:
   GenerateOilPerTime: 10
   GenerateOilTimer: 1.3
   OilRigProgressBarFull: {fileID: 1553216056535703205}
+--- !u!65 &1365156897501487182
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6007425054959144132}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.4, y: 1.33, z: 2.69}
+  m_Center: {x: 0, y: -0.54, z: 0}
 --- !u!1 &6627801627304610553
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Build : MonoBehaviour
 {
 
@@ -11,6 +12,8 @@ public class Build : MonoBehaviour
 
     [SerializeField] private Transform ItSelfTransform;
     [SerializeField] private Renderer ItSelfRenderer;
+
+    [SerializeField] private AudioClip Sound;
 
 
     void Start()
@@ -35,31 +38,36 @@ public class Build : MonoBehaviour
     {
         if(IsAbleToBePutted)
         {
-            GetComponent<Build>().enabled = false;
+            Camera.main.GetComponent<WorldLoad>().AddBuildingAndSave(gameObject);
             ItSelfRenderer.material.color = Color.white;
+            SoundPlay();
+            GetComponent<Build>().enabled = false;
         }
          
     }
 
     private void OnCollisionStay(Collision other) 
     {
-        if(!GetComponent<Build>().enabled)
-        {
-            IsAbleToBePutted = false;
-            ItSelfRenderer.material.color = Color.red; 
-        }
+        IsAbleToBePutted = false;
+        ItSelfRenderer.material.color = Color.red; 
         
     }
 
     private void OnCollisionExit(Collision other) 
     {
-        if(!GetComponent<Build>().enabled)
-        {
-            IsAbleToBePutted = true;
-            ItSelfRenderer.material.color = Color.green; 
-        }
+        IsAbleToBePutted = true;
+        ItSelfRenderer.material.color = Color.green; 
     }
 
+    private void SoundPlay()
+    {
+        Camera.main.GetComponent<AudioSource>().clip = Sound;
+        Camera.main.GetComponent<AudioSource>().Play();
+    }
+
+    
+        
+    
 
 
 

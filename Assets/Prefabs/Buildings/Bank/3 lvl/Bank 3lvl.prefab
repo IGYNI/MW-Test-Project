@@ -311,7 +311,6 @@ GameObject:
   - component: {fileID: 840603105401351361}
   - component: {fileID: 6792195784926784372}
   - component: {fileID: 3847569644933156349}
-  - component: {fileID: 2668550083023366967}
   - component: {fileID: 7820907080630482692}
   - component: {fileID: 7744291091787172412}
   - component: {fileID: 3211145485200571471}
@@ -331,7 +330,7 @@ Transform:
   m_GameObject: {fileID: 3530557757334060148}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: -0.18, z: -9.01}
+  m_LocalPosition: {x: 12, y: -0.5, z: -30}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -389,27 +388,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2668550083023366967
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3530557757334060148}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &7820907080630482692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,6 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItSelfTransform: {fileID: 840603105401351361}
   ItSelfRenderer: {fileID: 3847569644933156349}
+  Sound: {fileID: 8300000, guid: 2ac21808d31d3b94ca026f00dd7b4197, type: 3}
 --- !u!54 &7744291091787172412
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -465,7 +444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ToExchangePetrol: 1
   ToExchangeMoney: 1
-  ToExchangeTime: 5
+  ToExchangeTime: 120
   RandomRangeStart: -1000
   RandomRangeEnd: 999
   MoneyIconTimer: {fileID: 7409808902293901006}
@@ -655,7 +634,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5390713695736908870}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -663,7 +642,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0.4647}
+  m_AnchoredPosition: {x: 0.067, y: -0.233}
   m_SizeDelta: {x: 0.45, y: 0.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5126488643639168924
@@ -715,6 +694,7 @@ GameObject:
   - component: {fileID: 6824718180697636581}
   - component: {fileID: 1656945278977015917}
   - component: {fileID: 2440232655799776931}
+  - component: {fileID: 8496930264795090254}
   m_Layer: 0
   m_Name: Bank 3lvlModel
   m_TagString: Untagged
@@ -787,6 +767,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8496930264795090254
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5450259139726526079}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.100001, y: 5.399664, z: 14.1}
+  m_Center: {x: -0.24999976, y: 2.9401693, z: -1.1499977}
 --- !u!1 &5876714548929284497
 GameObject:
   m_ObjectHideFlags: 0
